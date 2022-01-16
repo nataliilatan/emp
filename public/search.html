@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="title">Форма поиска</h2>
+    <form action="" method="GET" class="form" id="form">
+        
+        <div class="form1">
+            Параметр поиска: 
+            <select name="parametr" class="input">
+                <option value="full_name">Имя</option>
+                <option value="email">Почта</option>
+                <option value="tel">Номер телефона</option>
+            </select>
+        </div>
+        <div class="form2">
+            Введите данные для поиска:
+                <input type="text" name="arg" id="arg" class="input"> 
+        </div>
+        <input type="submit" value="Поиск" class="btn" style="width: 200px; align-self:baseline; margin-top: 47px;" id='btnSubmit'>
+    </form>
+    <script src="./js.js" type="text/javascript"></script>
+</body>
+</html>

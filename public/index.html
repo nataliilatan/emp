@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Main page</title>
+</head>
+<body>
+   <div class="btn_section">
+    <button class="open_form_window main_btn">
+        Открыть окно формы
+    </button>
+    <button class="open_edit_window main_btn">
+        Открыть окно редактирования данных
+    </button>
+    <button class="open_delete_window main_btn">
+        Открыть окно для удаления данных
+    </button>
+    <button class="open_search_window main_btn">
+        Поиск в БД
+    </button>
+   </div> 
+    <script type="text/javascript">
+        (function() {
+                const formOpen = document.querySelector(".open_form_window");
+                const editForm = document.querySelector(".open_edit_window");
+                const deleteForm = document.querySelector(".open_delete_window");
+                const searchForm = document.querySelector(".open_search_window");
+                formOpen.addEventListener('click', () => {
+                    window.open("../form.html", "form", "width=1200px, height=800px, screenX=400px, screenY=50px, status=yes, toolbar=no, menubar=no, location=no, directories=no, scrollbars=yes");
+                }) 
+                editForm.addEventListener('click', () => {
+                    window.open("../edit.html", "form", "width=1200px, height=300px, screenX=400px, screenY=350px, status=yes, toolbar=no, menubar=no, location=no, directories=no, scrollbars=yes");
+                })
+                deleteForm.addEventListener('click', () => {
+                    window.open("./delete.html", "form", "width=1200px, height=300px, screenX=400px, screenY=350px, status=yes, toolbar=no, menubar=no, location=no, directories=no, scrollbars=yes");
+                })
+                searchForm.addEventListener('click', () => {
+                    window.open("./search.html", "form", "width=1200px, height=300px, screenX=400px, screenY=350px, status=yes, toolbar=no, menubar=no, location=no, directories=no, scrollbars=yes");
+                })
+        }());
+
+    </script>
+</body>
+</html>
